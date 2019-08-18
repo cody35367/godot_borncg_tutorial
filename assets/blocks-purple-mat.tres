@@ -1,0 +1,21 @@
+[gd_resource type="SpatialMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://textures/PavingStones28_col.jpg" type="Texture" id=1]
+[ext_resource path="res://textures/PavingStones28_AO.jpg" type="Texture" id=2]
+[ext_resource path="res://textures/PavingStones28_nrm.jpg" type="Texture" id=3]
+[ext_resource path="res://textures/PavingStones28_rgh.jpg" type="Texture" id=4]
+
+[resource]
+albedo_color = Color( 0.937255, 0.764706, 1, 1 )
+albedo_texture = ExtResource( 1 )
+roughness_texture = ExtResource( 4 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 2 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
