@@ -4,4 +4,4 @@ This is the result of following BornCG's "Godot 3 Tutorial Series" on YouTube wi
 
 Texture source: https://cc0textures.com/
 
-
+Fonts source: https://fonts.google.com/

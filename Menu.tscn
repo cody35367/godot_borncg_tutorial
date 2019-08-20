@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/Ultra-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/button-title-play.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 110
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0.0784314, 0.160784, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = 100.0
+margin_right = 1280.0
+margin_bottom = 360.0
+rect_rotation = -2.9
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 1, 0.784314, 1 )
+custom_colors/font_color_shadow = Color( 1, 0.537255, 0.0117647, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+text = "Simple 3D Game!"
+align = 1
+valign = 1
+
+[node name="button-title-play" type="Button" parent="."]
+margin_left = 485.528
+margin_top = 401.716
+margin_right = 828.528
+margin_bottom = 567.716
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.454902, 0.866667, 0.0392157, 1 )
+custom_colors/font_color_hover = Color( 0.94902, 0.631373, 0.0235294, 1 )
+custom_colors/font_color_pressed = Color( 0.898039, 0.0392157, 0.603922, 1 )
+text = "PLAY"
+flat = true
+script = ExtResource( 3 )
+[connection signal="pressed" from="button-title-play" to="button-title-play" method="_on_buttontitleplay_pressed"]
