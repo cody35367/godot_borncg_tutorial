@@ -1,0 +1,24 @@
+[gd_resource type="SpatialMaterial" load_steps=6 format=2]
+
+[ext_resource path="res://textures/Metal03_col.jpg" type="Texture" id=1]
+[ext_resource path="res://textures/Metal03_disp.jpg" type="Texture" id=2]
+[ext_resource path="res://textures/Metal03_met.jpg" type="Texture" id=3]
+[ext_resource path="res://textures/Metal03_nrm.jpg" type="Texture" id=4]
+[ext_resource path="res://textures/Metal03_rgh.jpg" type="Texture" id=5]
+
+[resource]
+albedo_color = Color( 0.67451, 0.129412, 0.894118, 1 )
+albedo_texture = ExtResource( 1 )
+metallic = 0.1
+metallic_texture = ExtResource( 3 )
+roughness_texture = ExtResource( 5 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 4 )
+depth_enabled = true
+depth_scale = 0.0
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 2 )
+uv1_scale = Vector3( 5, 5, 5 )
